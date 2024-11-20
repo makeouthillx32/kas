@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+/* Full-Page Distressed Background */
+body {
+  background: 
+    /* Black base with slight transparency for layered effect */
+    linear-gradient(45deg, rgba(0, 0, 0, 0.7) 20%, transparent 20%, transparent 40%, rgba(0, 0, 0, 0.7) 40%, rgba(0, 0, 0, 0.7) 60%, transparent 60%, transparent 80%, rgba(0, 0, 0, 0.7) 80%),
+    
+    /* Green stripes with distressed breaks */
+    repeating-linear-gradient(135deg, #00ff00 0, #00ff00 15%, transparent 15%, transparent 30%),
+    
+    /* Additional black stripes to increase the presence of black */
+    repeating-linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) 25px, transparent 25px, transparent 50px),
+    
+    /* Distressed white pattern with breaks */
+    repeating-linear-gradient(135deg, #ffffff55 0, #ffffff55 10%, transparent 10%, transparent 20%);
+  background-size: cover;
+  background-blend-mode: overlay, multiply, normal, overlay;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.resume {
+  width: 1000px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  background: #1c1c1c;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.8);
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 48px;
+  color: #00ff00;
+  text-transform: uppercase;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  margin-bottom: 5px;
+}
+
+/* Text Box for Content Sections */
+.text-box {
+  background: #1c1c1c;
+  padding: 20px;
+  border-left: 5px solid #00ff00;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.text-box h2 {
+  font-size: 24px;
+  color: #00ff00;
+  margin-bottom: 10px;
+}
+
+.text-box p,
+.text-box ul {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.text-box ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.text-box ul li {
+  margin-bottom: 5px;
+}
+
+.text-box ul li::before {
+  content: "• ";
+  color: #00ff00;
+}
